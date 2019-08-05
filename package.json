@@ -1,0 +1,32 @@
+{
+  "name": "chernator",
+  "version": "1.0.0",
+  "description": "Tool for optimize, convert and bundle svg icons to font",
+  "main": "generate-icons.js",
+  "scripts": {
+    "start": "node generate-icons.js",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreymaznyak/chernator.git"
+  },
+  "keywords": [
+    "svg",
+    "fonts",
+    "converter",
+    "optimize-svg",
+    "generate-font",
+    "svg-to-font"
+  ],
+  "author": "Andrey Maznyak <andreymaznyak@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andreymaznyak/chernator/issues"
+  },
+  "homepage": "https://github.com/andreymaznyak/chernator#readme",
+  "dependencies": {
+    "simple-webfonts-generator": "^0.4.3",
+    "svgo": "^1.3.0"
+  }
+}
