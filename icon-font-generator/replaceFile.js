@@ -22,11 +22,11 @@ async function searchReplaceFile(fileName, configs = replaceConfigs) {
   let fileChanged = false;
   const originalString = await readfile(fileName, { encoding: 'utf8' });
   const optimizedString = await optimize(originalString);
-
-  const replacedString = await optimize(configs.reduce(
+  const replacedConfigs = configs.reduce(
     (prev, config) => prev.replace(config.reg, config.post),
     optimizedString,
-  ));
+  );
+  const replacedString = await optimize(optimizedString);
 
   if (originalString !== replacedString) {
     await writefile(fileName, replacedString);

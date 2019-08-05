@@ -17,7 +17,7 @@ const defaultConfig = {
   normalize: true,
   fontHeight: 1000,
   htmlTemplate: 'example/templates/index.html.hbs',
-  cssTemplate: 'example/icons.css.hbs',
+  cssTemplate: 'example/templates/icons.css.hbs',
 };
 
 async function generateIcons(config) {

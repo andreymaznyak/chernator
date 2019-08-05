@@ -73,12 +73,13 @@ const svgoConfig = {
 const svgo = new SVGO(svgoConfig);
 
 async function optimize(data) {
-  return svgo.optimize(data).then( optimizedSvg => {
-    return optimizedSvg.data;
-  }).catch( error => {
-    console.log('Error when trying optimize svg',error);
-    return data;
-  });
+  // return svgo.optimize(data).then( optimizedSvg => {
+  //   return optimizedSvg.data;
+  // }).catch( error => {
+  //   console.log('Error when trying optimize svg',error);
+  //   return data;
+  // });
+  return data;
 };
 
 module.exports = {
